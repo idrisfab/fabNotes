@@ -1,0 +1,68 @@
+// set up some globals.
+$notesAreaBackgroundColor: #9d9d9d;
+
+// note sizes
+$def-note-width: 150px;
+$def-note-height:220px;
+
+.container
+{
+  margin-top: 0vh;
+}
+
+#notesArea
+{
+  background-color: $notesAreaBackgroundColor;
+  padding: 10px;
+  height: auto;
+  overflow: hidden;
+}
+
+.baseNote
+{
+  min-width: $def-note-width;
+  min-height: $def-note-height;
+  margin: 7px;
+  cursor: pointer;
+  word-wrap: break-word;
+  max-width: 40%;
+}
+
+.note-blue
+{
+  @extend .baseNote;
+  background-color: #2aabd2;
+  float: left;
+}
+
+.icon
+{
+  img
+  {
+    width: 35px;
+    margin: 5px;
+  }
+}
+
+#noteHeaderArea
+{
+  background-color: #98cbe8;
+
+  #information-area
+  {
+    float: right;
+    padding-top:10px;
+    padding-right: 15px;
+  }
+}
+
+#addButton, #delButton
+{
+  cursor: pointer;
+}
+
+#noteEntry
+{
+  width:100%;
+  height:150px;
+}
