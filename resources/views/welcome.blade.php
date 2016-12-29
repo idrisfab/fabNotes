@@ -41,6 +41,11 @@
                 top: 18px;
             }
 
+            .lead-text
+            {
+                font-size: larger;
+            }
+
             .content {
                 text-align: center;
             }
@@ -79,16 +84,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Fab Notes
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                <h3 class="lead-text">A note taking application</h3>
+
             </div>
         </div>
     </body>

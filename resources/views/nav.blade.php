@@ -12,7 +12,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/notes') }}">
-                {{ config('app.name', 'Laravel') }}
+                <img src="images/app-icon.svg" alt="Fab Notes" id="app-icon">
             </a>
         </div>
 
@@ -31,7 +31,7 @@
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ Auth::user()->name}} who is {{Auth::user()->id }} <span class="caret"></span>
+                            Signed in as {{ Auth::user()->name}} </span>
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
