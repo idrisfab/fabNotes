@@ -12,8 +12,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([ 'name' => 'idro', 'email' => 'blag@gmaill,com', 'password'=>'boomboom', 'created_at'=> Carbon::now(), 'updated_at'=> Carbon::now()]);
-        DB::table('users')->insert([ 'name' => 'Idris', 'email' => 'idro@idro.com', 'password'=>'boomboom', 'created_at'=> Carbon::now(), 'updated_at'=> Carbon::now()]);
+        DB::table('users')->insert([ 'name' => 'idro', 'email' => 'blag@gmaill,com', 'password'=>Hash::make('boomboom'), 'created_at'=> Carbon::now(), 'updated_at'=> Carbon::now()]);
+        DB::table('users')->insert([ 'name' => 'Idris', 'email' => 'idro@idro.com', 'password'=>Hash::make('boomboom'), 'created_at'=> Carbon::now(), 'updated_at'=> Carbon::now()]);
+        DB::table('users')->insert([ 'name' => 'Joeseph', 'email' => 'joe@bloggs.com', 'password'=>Hash::make('boomboom'), 'created_at'=> Carbon::now(), 'updated_at'=> Carbon::now()]);
         DB::table('notes')->insert([ 'userId' => 1, 'noteText' => 'This is blag note', 'created_at'=> Carbon::now(), 'updated_at'=> Carbon::now()]);
         DB::table('notes')->insert([ 'userId' => 1, 'noteText' => 'The rain in Spain', 'created_at'=> Carbon::now(), 'updated_at'=> Carbon::now()]);
         DB::table('notes')->insert([ 'userId' => 1, 'noteText' => 'This is only the start', 'created_at'=> Carbon::now(), 'updated_at'=> Carbon::now()]);

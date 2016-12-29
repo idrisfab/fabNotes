@@ -13,7 +13,8 @@
   margin: 7px;
   cursor: pointer;
   word-wrap: break-word;
-  max-width: 40%; }
+  max-width: 40%;
+  padding: 5px; }
 
 .note-blue {
   background-color: #2aabd2;
